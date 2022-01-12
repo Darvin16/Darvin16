@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main()
+{
+    char option;
+    int a,b;
+    printf("Please Enter Option like\n"
+          "Addition for +\nSubtraction for-\n"
+          "Multiply for *\nDivision for /\n");
+    scanf("%c",&option);
+    printf("Enter Two Values\n");
+    scanf("%d%d",&a,&b);
+    switch(option)
+    {
+        case'+':printf("Addition is %d\n",a+b);
+                break;
+         case'-':printf("Subtraction is %d\n",a-b);
+                break;
+        case'*':printf("Multiply is %d\n",a*b);
+                break;
+        case'/':printf("Division is %d\n",a/b);
+                break;
+        default:printf("invalid Choice\n");
+     }
+}
